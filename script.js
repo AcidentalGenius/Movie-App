@@ -12,7 +12,7 @@ getMovies(API_URL);
 async function getMovies(url) {
     const resp = await fetch(url);
     const data = await resp.json();
-
+    console.log(data.results)
     showMovies(data.results);
 }
 
@@ -21,7 +21,7 @@ function showMovies(movies) {
     main.innerHTML = '';
 
     movies.forEach(movie=>{
-        const { title, poster_path, vote_average, overview, id } = movie;
+        const { title, poster_path, vote_average, overview } = movie;
 
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
@@ -44,7 +44,7 @@ function showMovies(movies) {
         `;
 
         main.appendChild(movieEl);
-        /*movieEl.addEventListener('click', movieEl.hover)*/
+        // movieEl.addEventListener('click', movieEl.hover)
     })
 }
 
