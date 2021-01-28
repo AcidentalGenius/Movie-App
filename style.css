@@ -95,7 +95,8 @@ main{
 }
 
 .overview {
-    background: #fff;
+    background: #000000cc;
+    color:white;
     padding: 2rem;
     position: absolute;
     left: 0;
