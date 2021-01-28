@@ -44,7 +44,7 @@ function showMovies(movies) {
         `;
 
         main.appendChild(movieEl);
-        movieEl.addEventListener('click', movieEl.hover)
+        /*movieEl.addEventListener('click', movieEl.hover)*/
     })
 }
 
